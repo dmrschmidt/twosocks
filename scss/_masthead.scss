@@ -1,0 +1,36 @@
+// Styling for the masthead
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(to bottom, #{fade-out($gray-900, .2)} 0%,#{fade-out($gray-900, .2)} 100%);
+
+  h1 {
+    font-size: 2.25rem;
+    font-family: "Noto Serif", serif;
+  }
+
+  .btn {
+    min-width: 50%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+
+    p {
+      font-size: 1.15rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
